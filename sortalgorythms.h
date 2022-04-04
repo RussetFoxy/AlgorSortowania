@@ -170,20 +170,20 @@ void medianofthree (datatype array[], long &left, long &right)
 
 
 template <typename datatype>
-long Partition (datatype Array[], long L, long R)
+long Partition (datatype array[], long left, long right)
 {
     long i, j;
-    if (R>=3)
-        MedianOfThree(Array,L,R);
-    for (i=L, j=R-2; ; )
+    if (right>=3)
+        medianofthree(array,left,right);
+    for (i=left, j=right-2; ; )
     {
-        for ( ; Array[i]<Array[R-1]; ++i);
-        for ( ; j>=L && Array[j]>Array[R-1]; --j);
+        for ( ; array[i]<array[left-1]; ++i);
+        for ( ; j>= left && array[j]>array[right-1]; --j);
         if (i<j)
-            Exchange(Array,i++,j--);
+            swaparray(array,i++,j--);
         else break;
     }
-    Exchange(Array,i,R-1);
+    swaparrau(array,i,right - 1);
     return i;
 }
 
