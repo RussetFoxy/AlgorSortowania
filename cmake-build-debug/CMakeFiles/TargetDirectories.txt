@@ -1,0 +1,3 @@
+C:/Users/Kacper/SortowanieV2/cmake-build-debug/CMakeFiles/SortowanieV2.dir
+C:/Users/Kacper/SortowanieV2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Kacper/SortowanieV2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
